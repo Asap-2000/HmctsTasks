@@ -80,11 +80,3 @@ Located at `wwwroot/index.html`.
 ## Logging and diagnostics
 - Startup writes a console warning if the XML comments file can't be found.  
 - To view logs, run the app (Visual Studio or `dotnet run`) and watch the console output.  
-- For richer logging configure providers in `Program.cs` (e.g., `builder.Logging.AddConsole()` or via `appsettings.json`).
-
-## Troubleshooting
-- `Metadata file ... obj\Debug\net8.0\ref\<Project>.dll could not be found`: fix compile errors, then run `dotnet clean && dotnet build`.  
-- Missing XML comments in Swagger: ensure XML generation is enabled in the `.csproj` and the XML file is present in the build output.  
-- If Swagger UI not visible: confirm the app is running, correct port, and that `UseSwagger()` / `UseSwaggerUI()` are called for the current environment.
-
-If you want, I can add example request/response payloads, a sample `curl` command for `POST /api/tasks`, or a section describing the tests in more detail.

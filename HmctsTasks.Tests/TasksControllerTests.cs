@@ -1,15 +1,10 @@
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 using HmctsTasks.Contracts;
 using HmctsTasks.Controllers;
 using HmctsTasks.Data;
-using HmctsTasks.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TaskStatus = HmctsTasks.Models.TaskStatus;
 
 namespace HmctsTasks.Tests
 {

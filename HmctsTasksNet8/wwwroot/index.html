@@ -14,18 +14,22 @@
             max-width: 640px;
             margin: 2rem auto;
         }
+
         .field {
             margin-bottom: 1rem;
         }
+
         .error {
             margin-top: 1rem;
-            colour: red;
+            color: red;
         }
+
         .card {
             margin-top: 1.5rem;
             border: 1px solid #ccc;
             padding: 1rem;
         }
+
         input[type="text"],
         textarea,
         select,
@@ -33,6 +37,7 @@
             width: 100%;
             box-sizing: border-box;
         }
+
         button {
             padding: 0.5rem 1rem;
         }
@@ -66,7 +71,7 @@
             <input id="dueAt" type="datetime-local" x-model="dueAtLocal" required />
         </div>
 
-        <button type="submit" :disabled="isSubmitting">
+        <button type="submit" x-bind:disabled="isSubmitting ? 'disabled' : null">
             <span x-show="!isSubmitting">Create task</span>
             <span x-show="isSubmitting">Creating…</span>
         </button>
